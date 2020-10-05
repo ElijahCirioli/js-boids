@@ -1,0 +1,140 @@
+body {
+	-webkit-user-select: none; /* Safari */
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+/Edge */
+	user-select: none; /* Standard */
+}
+#canvasHolder {
+	position: relative;
+	padding-top: 40px;
+}
+#myCanvas {
+	border: 5px solid #3a5032;
+	background-color: #3a5032;
+	border-radius: 4px;
+	display: block;
+	margin: auto;
+}
+#controls {
+	text-align: center;
+	width: 100%;
+	margin-top: 10px;
+	margin-left: -110px;
+	padding-bottom: 180px;
+}
+#resetButton {
+	background-color: #506e45;
+	color: white;
+	border: none;
+	font-family: "Montserrat", serif;
+	text-align: center;
+	line-height: 30px;
+	font-size: 18px;
+	padding: 5px 20px 5px 20px;
+	cursor: pointer;
+	outline: none;
+}
+.switchButton {
+	margin: 0 auto;
+	font-family: "Montserrat", serif;
+	text-align: center;
+	padding: 5px 0 5px 0;
+	line-height: 30px;
+	font-size: 18px;
+	cursor: pointer;
+	border: none;
+	width: 100px;
+	outline: none;
+}
+#createButton {
+	background-color: #506e45;
+	margin-left: 25px;
+	color: white;
+}
+#scatterButton {
+	background-color: #c9c9c9;
+}
+#debugButton {
+	background-color: #c9c9c9;
+	width: 25px;
+	height: 25px;
+	border: none;
+	outline: none;
+	margin: 0 0 0 25px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+#debugLabel {
+	display: inline;
+	line-height: 25px;
+	font-size: 12px;
+	margin-left: 7px;
+	vertical-align: middle;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.slider {
+	-webkit-appearance: none;
+	appearance: none;
+	background: #c9c9c9;
+	outline: none;
+	height: 25px;
+	margin: -5px 0 0 25px;
+	vertical-align: middle;
+}
+.slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 12px;
+	height: 25px;
+	background: #506e45;
+	cursor: pointer;
+}
+.slider::-moz-range-thumb {
+	width: 12px;
+	height: 25px;
+	background: #506e45;
+	cursor: pointer;
+}
+#controlLabels {
+	display: block;
+	color: #383838;
+	font-family: "Montserrat", serif;
+	font-size: 16px;
+	margin: 5px 0 0 70px;
+	width: 100%;
+	padding: 0 0 0 0;
+	text-align: center;
+}
+#triCanvas {
+	position: absolute;
+	margin-left: 40px;
+	cursor: pointer;
+}
+#vant-image {
+	width: 300px;
+	height: auto;
+	border: 3px solid #3a5032;
+	padding: 0 0 0 0;
+	border-radius: 3px;
+	margin-left: 2%;
+	margin-top: 1%;
+	background-color: #3a5032;
+}
+.wiki-image {
+	width: 250px;
+	height: auto;
+	border: 3px solid #3a5032;
+	background-color: #3a5032;
+	padding: 0 0 0 0;
+	margin-right: 2%;
+	border-radius: 3px;
+	margin-top: 1.5%;
+}
+@media only screen and (max-device-width: 480px) {
+	.wiki-image {
+		width: 60%;
+	}
+	#vant-image {
+		width: 50%;
+	}
+}

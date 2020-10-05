@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>Elijah Cirioli</title>
+
+		<link href="/page-style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/header-style.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="./style.css" rel="stylesheet" type="text/css" media="all" />
+
+		<link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+
+		<script src="/splash.js"></script>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/favicon/site.webmanifest" />
+		<link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5" />
+		<meta name="msapplication-TileColor" content="#00aba9" />
+		<meta name="theme-color" content="#ffffff" />
+	</head>
+	<body>
+		<div id="page-wrap">
+			<div id="header-wrap">
+				<div class="header-title">BOIDS</div>
+				<a class="header-logo" href="https://elijahcirioli.com"></a>
+			</div>
+			<div id="nav-spacer"></div>
+			<div id="nav-wrap" class="nav-absolute">
+				<nav>
+					<ul class="navlist">
+						<li class="navitem"><a class="navlink" href="https://elijahcirioli.com">PORTFOLIO</a></li>
+						<li class="navitem"><a class="navlink" href="https://elijahcirioli.com/about/">ABOUT</a></li>
+						<li class="navitem">
+							<a class="navlink" href="https://elijahcirioli.com/contact/">CONTACT</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<div id="canvasHolder">
+				<canvas id="myCanvas" width="1000" height="700"></canvas>
+				<div id="controls">
+					<button id="resetButton">RESET</button>
+					<button id="createButton" class="switchButton">CREATE</button
+					><button id="scatterButton" class="switchButton">SCATTER</button> <button id="debugButton"></button>
+					<p id="debugLabel">SHOW DEBUG</p>
+					<input type="range" min="2" max="100" value="40" class="slider" id="speedSlider" />
+					<input type="range" min="0" max="100" value="50" class="slider" id="inertiaSlider" />
+					<canvas id="triCanvas" width="160" height="160"></canvas>
+					<p id="controlLabels">
+						Mouse mode &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp; &emsp;
+						&emsp;Speed &emsp; &emsp; &emsp; &nbsp; &emsp; &emsp;Inertia
+					</p>
+				</div>
+				<script src="./boids.js"></script>
+			</div>
+			<footer>
+				<p>
+					©2019 Elijah Cirioli &nbsp;&nbsp;&nbsp;
+					<a class="footer-link" href="https://elijahcirioli.com">Portfolio</a> &nbsp;&nbsp;&nbsp;
+					<a class="footer-link" href="https://elijahcirioli.com/about/">About</a> &nbsp;&nbsp;&nbsp;
+					<a class="footer-link" href="https://elijahcirioli.com/contact/">Contact</a>
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
